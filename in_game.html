@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>입단테스트</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://font.elice.io/css?family=Elice+DX+Neolli" rel="stylesheet">
+  <link href="http://cdn.jsdelivr.net/gh/joungkyun/font-d2coding/d2coding.css" rel="stylesheet" type="text/css">
+  <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet">
+
+
+
+
+  <link rel="stylesheet" href="./in_game_style.css">
+<!--  <link rel="stylesheet" href="./in_game_style_removeClass.css">-->
+</head>
+
+<body>
+<header>
+  <nav>
+    <p class="title">NO CSS CLUB 입단테스트</p>
+    <span class="user">USER_INFO</span>
+    <span class="count">REMAIN_COUNT</span>
+    <span class="remain">REMAIN_TIME</span>
+
+    <button class="manual">매뉴얼과 힌트</button>
+    <button class="home">홈으로 돌아가기</button>
+  </nav>
+</header>
+<div class="clear"></div>
+
+<marquee><p>상단에 위치한 [MANUAL / HINT] 버튼을 통해 게임 매뉴얼과 간단한 힌트를 확인할 수 있습니다.</p></marquee>
+
+<div class="clear"></div>
+
+<main>
+  <section id="ready">
+    <div class="top"><p>준비</p></div>
+    <article class="ready_content">
+      <h1>5초 뒤 시작</h1>
+    </article>
+  </section>
+
+  <section id="fail">
+    <div class="top"><p>당신은 실패했습니다.</p></div>
+    <article class="fail_content">
+      <button class="retry">재도전</button>
+      <button class="fail_home">홈으로 돌아가기</button>
+    </article>
+  </section>
+
+
+  <section id="clear">
+    <div class="top"><p>성공!!!</p></div>
+    <article class="clear_content">
+      <h1>대단합니다!</h1>
+    </article>
+  </section>
+  <div id="dark_bg"></div>
+
+
+
+
+
+  <!--    인게임 시작-->
+  <div class="reg_container">
+    <div class="game_top">
+      <p class="active">http://nocssclubtest.com  |  입단테스트</p>
+    </div>
+
+
+    <div class="game_content">
+      <div class="game_container">
+
+        <div class="ingame_title ">
+          <h1>WELCOME TO NO CSS CLUB.<br><small>NO CSS클럽에 오신 것을 환영합니다.</small></h1>
+        </div>
+
+        <section id="section2">
+
+          <div class="container1">
+            <div class="container1_top">
+              <p>개요</p>
+            </div>
+            <div class="container_contents_center">
+              <img src="./sources/css3x.png" alt="css3" height="80px">
+              <p>아직도 웹 사이트를 개발할 때 이 페이지처럼 CSS로 도배를 하시나요?
+                No CSS클럽에 가입하여 No-CSS모임을 가져보세요.
+                간단한 입단 테스트만 거치면 당신도 No-CSS가 될 수 있습니다.</p>
+            </div>
+          </div>
+
+          <div class="container2">
+            <div class="container2_top">
+              HTML에 CSS가 필요없는 이유
+            </div>
+            <div class="container_contents_left">
+              <ul>
+                <li>웹사이트의 근본적 존재이유는 정보전달입니다. 정보전달에는 글자만 있으면 됩니다.</li>
+                <li>로딩시 CSS를 불러오고 적용시키고 다운로드 하는데 쓸 데 잆는 데이터와 시간이 낭비됩니다.</li>
+                <li>꾸미는 것에 신경쓰느라 양질의 정보를 놓칠 가능성이 있습니다.</li>
+                <li>근본은 HTML입니다.</li>
+                <li>단언컨대, HTML은 위대하며 CSS는 필요 없습니다.</li>
+              </ul>
+            </div>
+
+<!--            <div class="clear"></div>-->
+
+            <div class="container3">
+              <div class="container3_top">안내말씀</div>
+                <div class="container_contents_left">
+                  <br>
+                  <b>CSS를 사용하는 당신! 이 클럽에 가입해보세요.
+                  HTML만으로 당신의 사이트는 많은 관심을 받고 박수받을 것입니다.</b>
+                </div>
+            </div>
+          </div>
+
+      </section>  <!--game_container-->
+      </div>
+    </div>
+  </div>
+<!--  인게임 종료-->
+
+
+
+
+
+  <section class="config">
+    <article class="top">
+      <p>매뉴얼과 힌트.txt / Notepad</p>
+    </article>
+
+    <article class="main_content">
+      <article class="container">
+        <span class="title">[내비게이션 설명]</span> <br>
+        좌측부터 순서대로 도전자명, 남은 CSS요소, <br>남은 시간입니다.
+        <br><br><br><br>
+        <span class="title">[게임 방법]</span> <br>
+        CSS요소가 있다고 생각되는 부분을 마우스로 <br>클릭하여 CSS를 제거합니다. <br>
+        정답을 찾을 시 남은 CSS요소 카운트가 줄어들며 <br> 0이 되면 당신의 승리입니다.
+        <br><br><br><br>
+        <span class="hint">[힌트(클릭)]</span> <br>
+        <span class="hintText"></span>
+      </article>
+    </article>
+  </section>
+
+
+</main>
+
+<audio id="correct_sound" src="./sources/correct_sound.mp3"></audio>
+<audio id="ready_sound" src="./sources/ready_sound.mp3"></audio>
+<audio id="manual_sound" src="./sources/manual_sound.mp3"></audio>
+<audio id="clear_sound" src="./sources/clear_sound.wav"></audio>
+
+<script src="./in_game_js.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>프롤로그</title>
+
+<!--  Web Fonts 선언-->
+  <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet">
+  <link href="http://cdn.jsdelivr.net/gh/joungkyun/font-d2coding/d2coding.css" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: 'SUIT', sans-serif;
+  }
+  .bg {
+
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    filter: brightness(.3);
+    background-image: url("./sources/ncc_bg2.jpg");
+    background-size: cover;
+    background-position: top;
+  }
+
+  .title p {
+    position: absolute;
+    margin: 50px 0 0 50px;
+    font-size: 20px;
+    font-weight: 200;
+    z-index: 1;
+    color: white;
+  }
+  .title h1 {
+    position: absolute;
+    margin: 75px 0 0 50px;
+    font-size: 50px;
+    font-weight: 800;
+    color: rgba(255, 255, 255, .9);
+    z-index: 1;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+
+
+  section.config {
+    font-family: 'D2 coding';
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*transform: translate(20%, -50%);*/
+
+    transition: ease .75s;
+
+    width: 790px;
+    height: 450px;
+    background: #C7C7C7;
+    box-shadow: 5px 5px 0 rgba(0, 0, 0, .7);
+    border-top: solid 3px #F4F4F4;
+    border-left: solid 3px #F4F4F4;
+    border-right: solid 3px #939393;
+    border-bottom: solid 3px #939393;
+  }
+  section.config.active {
+    transform: translate(-20%, -50%);
+
+  }
+  section.config .container {
+    /*background-image: url("./sources/Frame21.png");*/
+    background-position: top;
+    background-size: cover;
+    line-height: 1.5;
+  }
+
+  .title, .hint {
+    font-weight: 700;
+  }
+  .hint:hover {
+    color: coral;
+  }
+  .top {
+    /*border: solid 1px blue;*/
+    width: 98.5%;
+    height: 35px;
+    margin: 7px auto;
+    display: table;
+    background: linear-gradient(90deg, rgba(0,14,135,1) 0%, rgba(0,99,255,1) 100%);
+  }
+  .top p {
+    /*border: solid 1px red;*/
+    font-weight: 600;
+    font-size: 13px;
+    padding-left: 10px;
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+  }
+  .main_content {
+    /*border: solid 1px red;*/
+    width: 98.5%;
+    height: 87%;
+    margin: 0 auto;
+    background: #F8F8F8;
+
+    /*border-top: solid 3px #939393;*/
+    /*border-left: solid 3px #939393;*/
+    /*border-right: solid 3px white;*/
+    /*border-bottom: solid 3px white;*/
+    box-shadow:
+            inset 0 3px 0 0 #939393,  /* top border */
+            inset 3px 0 0 0 #939393,  /* left border */
+            inset -3px 0 0 0 white,   /* right border */
+            inset 0 -3px 0 0 white;   /* bottom border */
+  }
+  .main_content .container {
+    /*border: solid 1px red;*/
+    width: 98%;
+    height: 97%;
+    padding: 10px;
+  }
+
+
+
+  button {
+    font-family: 'D2 coding';
+    font-size: 16px;
+    font-weight: 900;
+    color: #1f1f1f;
+    padding: 5px 15px;
+    background: #C7C7C7;
+    border-top: solid 2px #F4F4F4;
+    border-left: solid 2px #F4F4F4;
+    border-right: solid 2px #939393;
+    border-bottom: solid 2px #939393;
+  }
+  button:hover {
+    background: #B4B4B4;
+  }
+  button:active {
+    background: #C7C7C7;
+    border-top: solid 2px #939393;
+    border-left: solid 2px #939393;
+    border-right: solid 2px #F4F4F4;
+    border-bottom: solid 2px #F4F4F4;
+  }
+</style>
+<body>
+
+<header>
+  <div class="title">
+  <p>NO CSS CLUB | MINI GAME</p>
+  <h1>프롤로그</h1>
+</div>
+
+  <div class="bg"></div>
+</header>
+
+
+<section class="config">
+  <article class="top">
+    <p>프롤로그</p>
+  </article>
+
+  <article class="main_content">
+    <article class="container">
+
+
+
+
+
+    </article>
+
+  </article>
+</section>
+
+
+<audio id="sub_sound" src="./sources/sans_voice_17s.mp3"></audio>
+
+<script src="./index_js.js"></script>
+</body>
+</html>
